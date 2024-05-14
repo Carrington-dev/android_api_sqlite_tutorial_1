@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerVertical="true"
+    android:layout_margin="10dp"
+    >
+
+    <ImageView
+        android:id="@+id/iconContact"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/baseline_done_24" />
+
+    <LinearLayout
+        android:id="@+id/middleLLayout"
+        android:layout_toRightOf="@+id/iconContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="8dp"
+        android:layout_centerInParent="true">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:layout_weight="1">
+           <TextView
+               android:id="@+id/fullName"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:textSize="14sp"
+               android:text="Madan Kumar" />
+
+           <TextView
+               android:id="@+id/tagline"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="14sp"
+               android:text="Snr Software Engineer Role" />
+           <TextView
+               android:id="@+id/fullDate"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textSize="14sp"
+               android:text="2024-05-14T19:29:39.404920Z" />
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center"
+            android:layout_gravity="center_vertical|end">
+            <TextView
+                android:layout_toRightOf="@id/middleLLayout"
+                android:id="@+id/dateView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Mon" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
